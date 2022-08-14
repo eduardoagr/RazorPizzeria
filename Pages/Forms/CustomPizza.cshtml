@@ -1,0 +1,56 @@
+﻿@page
+@model CustomPizzaModel
+@{
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-body">
+            <form method="post" asp-action="OnPost">
+
+                <div class="form-group row mt-5 mb-2">
+                    <label class="col-sm-2 ">Pizza name</label>
+                    <div class="col-sm-10">
+                        <input type="text" placeholder="Give your pizza a name" asp-for="Pizza.PizzaName" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="container text-center">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" asp-for="Pizza.TomatoSauce" placeholder="Tomato Sauce" />Tomato Sauce
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" asp-for="Pizza.Pepperoni" placeholder="Peperoni" />Peperoni
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" asp-for="Pizza.Cheese" placeholder="Cheese" />Cheese
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" asp-for="Pizza.Mushrooms" placeholder="Muchroom" />Muchroom
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" asp-for="Pizza.Beef" placeholder="Beef" />Beef
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" asp-for="Pizza.Pineapple" placeholder="Pineaple" />Pineaple
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" asp-for="Pizza.Ham" placeholder="Ham" />Ham
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" asp-for="Pizza.Tuna" placeholder="Tuna" />Tuna
+                    </div>
+                </div>
+                <br />
+                <button class="btn btn-primary" style="float:right" type="submit">Order</button>
+            </form>
+        </div>
+    </div>
+</div>
